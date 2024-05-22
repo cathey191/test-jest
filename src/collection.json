@@ -1,0 +1,20 @@
+{
+  "$schema": "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "app": {
+      "description": "An app schematic.",
+      "factory": "./dist/app/index#app",
+      "schema": "./dist/app/schema.json"
+    },
+    "auth": {
+      "description": "Schematic that provides Trade Me auth.",
+      "factory": "./dist/auth/index#auth",
+      "schema": "./dist/auth/schema.json"
+    },
+    "ng-new": {
+      "description": "Schematic that creates a new TVP Front End project.",
+      "factory": "./dist/ng-new/index#ngNew",
+      "schema": "./dist/ng-new/schema.json"
+    }
+  }
+}
